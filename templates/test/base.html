@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IBG Carbon</title>
+    <link rel="stylesheet" type="text/css"
+          href="./jquery.fullPage.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <script type="text/javascript"
+            src="./jquery.fullPage.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                //Navigation
+                menu: '#menu',
+                lockAnchors: false,
+                //anchors: ['firstPage', 'secondPage'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Home', 'About Us'],
+                showActiveTooltip: false,
+                slidesNavigation: false,
+                slidesNavPosition: 'bottom',
+
+                //Scrolling
+                css3: true,
+                scrollingSpeed: 700,
+                autoScrolling: true,
+                fitToSection: true,
+                fitToSectionDelay: 1000,
+                scrollBar: false,
+                easing: 'easeInOutCubic',
+                easingcss3: 'ease',
+                loopBottom: false,
+                loopTop: false,
+                loopHorizontal: true,
+                continuousVertical: false,
+                continuousHorizontal: false,
+                scrollHorizontally: false,
+                interlockedSlides: false,
+                dragAndMove: false,
+                offsetSections: false,
+                resetSliders: false,
+                fadingEffect: false,
+                normalScrollElements: '#element1, .element2',
+                scrollOverflow: false,
+                scrollOverflowReset: false,
+                scrollOverflowOptions: null,
+                touchSensitivity: 15,
+                normalScrollElementTouchThreshold: 5,
+                bigSectionsDestination: null,
+
+                //Accessibility
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: true,
+
+                //Design
+                controlArrows: true,
+                sectionsColor: ['#0E1B41', '#00D8D8', '#00D8D8', '#00D8D8'],
+                verticalCentered: true,
+                paddingTop: '0px',
+                paddingBottom: '0px',
+                fixedElements: '#header, .footer',
+                responsiveWidth: 0,
+                responsiveHeight: 0,
+                responsiveSlides: false,
+                parallax: false,
+                parallaxOptions: {type: 'reveal', percentage: 62, property: 'translate'},
+
+                //Custom selectors
+                sectionSelector: '.section',
+                slideSelector: '.slide',
+
+                lazyLoading: true,
+
+                //events
+                onLeave: function (index, nextIndex, direction) {
+                },
+                afterLoad: function (anchorLink, index) {
+                },
+                afterRender: function () {
+                },
+                afterResize: function () {
+                },
+                afterResponsive: function (isResponsive) {
+                },
+                afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+                },
+                onSlideLeave: function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
+                }
+            });
+        });
+    </script>
+    <script type="application/javascript"
+            src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <link rel="stylesheet" href="./mainv2.css">
+
+</head>
+<body>
+<!--<h2>IBG CARBON PRIVATE LIMITED</h2>-->
+<!--<p id="welcome-text">As a leader in the industry, IBG Carbon Pvt. Limited has set the bar with its unwavering<br>commitment toquality, performance and exceptional customer care. Through our extensive selection of services, we go above-->
+<!--and beyond to ensure your needs are not just met, but exceeded. </p>-->
+
+<ul id="menu">
+    <li data-menuanchor="firstPage"><a href="#firstPage">First section</a></li>
+    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
+    <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
+    <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+</ul>
+<div id="fullpage">
+    <div class="section">
+        <div class="container">
+            <p>Hello World</p>
+        </div>
+        <div id="particles-js"></div>
+    </div>
+    <div class="section custom-section">
+        <div class="container">
+            1
+        </div>
+    </div>
+    <div class="section">3</div>
+    <div class="section">4</div>
+</div>
+<script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', 'particlesjs-config.json', function () {
+        console.log('callback - particles.js config loaded');
+    });
+</script>
+</body>
+</html>
