@@ -2,6 +2,10 @@
     height: 1px;
 }
 
+#sec-1-slide-1, #sec-1-slide-2 {
+    /*padding-bottom: 60px;*/
+}
+
 #main-section {
     background-size: cover;
     background: #0E1B41 no-repeat;
@@ -11,7 +15,7 @@
     vertical-align: bottom;
     padding-top: 30px;
     color: white;
-    text-align: center;
+    text-align: justify;
 }
 
 .intro-text p {
@@ -23,13 +27,14 @@
     font-size: 3vmax;
     /*padding-bottom: 70px;*/
     text-align: center;
-    color: #0fb7af;
+    color: #1dace8;
     font-weight: bolder;
     font-stretch: normal;
+    text-decoration: underline;
 }
 
 #section1 .container {
-    width: 75%;
+    width: 85%;
 }
 
 body {
@@ -46,7 +51,7 @@ div {
 }
 
 .container {
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
     padding-top: 30px;
 }
@@ -60,9 +65,9 @@ div {
     font-family: 'Aldrich', sans-serif;
     height: 100%;
     width: 100%;
-    background: -webkit-gradient(linear, top left, bottom left, from(#0e1b41), to(#000000));
-    background: -webkit-linear-gradient(#0e1b41, #000000);
-    background: linear-gradient(#0e1b41, #000000);
+    background: -webkit-linear-gradient(top, #0e1b41, #000000);
+    /*background: -webkit-gradient(linear, top left, bottom left, from(#0e1b41), to(#000000));*/
+    /*background: linear-gradient(#0e1b41, #000000);*/
 }
 
 #menu {
@@ -109,28 +114,36 @@ div {
     left: 0
 }
 
+
 .icon-links {
     display: flex;
     justify-content: space-between;
-    padding-top: 5vh;
+    padding-top: 4vh;
 }
 
 .icon-links img {
-    position: relative;
     padding-bottom: 10px;
-    float: left;
-    width: fit-content;
+    width: 100%;
+    line-height: 100%;
+    max-width: 100px;
+    vertical-align: middle;
 }
 .icon-links figcaption{
-    margin: 10px 0 0 0;
-    font-variant: small-caps;
+    /*margin: 10px 0 0 0;*/
+    /*font-variant: small-caps;*/
+    display: table-caption;
+    caption-side: bottom;
+    padding-top: 0.5em;
+    text-align: center;
+    border: none;
 }
 .icon-links figure{
-    display:inline-block;
-    padding: 5px;
+    float: left;
+    border: none;
     text-align: center;
+    padding: 5px;
+    display: table;
     width: 30%;
-    height: 30%;
 }
 /*.item{*/
 /*vertical-align: top;*/
