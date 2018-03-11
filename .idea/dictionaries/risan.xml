@@ -2,6 +2,8 @@
   <dictionary name="risan">
     <words>
       <w>fullpage</w>
+      <w>particlesjs</w>
+      <w>vmax</w>
     </words>
   </dictionary>
 </component>
