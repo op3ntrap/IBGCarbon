@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:cc="http://creativecommons.org/ns#"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg"
+        id="svg13"
+        preserveAspectRatio="xMidYMid meet"
+        viewBox="0 0 174.20508 201.15469"
+        width="174.20508"
+        height="201.15469"
+        version="1.1">
+    <metadata
+            id="metadata17">
+        <rdf:RDF>
+            <cc:Work
+                    rdf:about="">
+                <dc:format>image/svg+xml</dc:format>
+                <dc:type
+                        rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                <dc:title></dc:title>
+            </cc:Work>
+        </rdf:RDF>
+    </metadata>
+    <defs
+            id="defs7">
+        <linearGradient
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="scale(0.93060486,1.0745699)"
+                y2="186.65826"
+                x2="-0.53728497"
+                y1="-0.53728497"
+                x1="-0.53728497"
+                id="grad2">
+            <stop
+                    id="stop2"
+                    style="stop-color:rgb(14,27,65);stop-opacity:1"
+                    offset="0%"/>
+            <stop
+                    id="stop4"
+                    style="stop-color:rgb(0,251,255);stop-opacity:1"
+                    offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g
+            id="g11"
+            transform="translate(0.5,0.57735027)">
+        <path
+                style="stroke:url(#grad2);fill:none"
+                id="path9"
+                d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                class="shape"/>
+    </g>
+</svg>
