@@ -431,62 +431,62 @@ div {
     color: aqua;
 }
 
-#icarb-2005 .container {
+.icarb-catalog .container {
     width: 85%;
     height: 80%;
     margin: 0 auto;
     border: none;
 }
 
-#left-content, #right-content {
+.left-content, .right-content {
     width: 45%;
     height: 100%;
     text-align: left;
     float: left;
 }
 
-#right-content {
+.right-content {
     float: right;
     height: 100%;
 }
 
 @media only screen and (max-width: 768px) {
-    #left-content, #right-content {
+    .left-content, .right-content {
         width: 85%;
         max-height: 49%;
     }
 }
 
-#left-content h1, #right-content h1 {
+.left-content h1, .right-content h1 {
     text-align: left;
     color: greenyellow;
 }
 
-#left-content span, #right-content span {
+.left-content span, .right-content span {
     color: white;
     font-style: italic;
 }
 
-#left-content img {
+.left-content img {
     padding-top: 10px;
     height: auto;
     max-width: 87%;
     margin: auto;
 }
 
-#left-content {
+.left-content {
     border-right: 3px dotted greenyellow;
     padding-left: 0.5em;
     padding-right: 1em;
 }
 
-#left-content ul {
+.left-content ul {
     list-style-type: none;
     text-align: left;
     padding-left: 0;
 }
 
-#left-content li {
+.left-content li {
     padding-top: 2px;
 }
 
