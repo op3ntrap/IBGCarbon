@@ -249,6 +249,10 @@ div {
     padding-top: 4vh;
 }
 
+#carbon-selector {
+    justify-content: center;
+}
+
 .icon-links img {
     line-height: 100%;
     max-width: 100px;
