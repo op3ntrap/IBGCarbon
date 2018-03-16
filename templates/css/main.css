@@ -103,7 +103,7 @@
 
 .intro-text {
     color: black;
-    padding-top: 30px;
+    padding-top: 0;
     text-align: justify;
     vertical-align: bottom;
 }
@@ -257,6 +257,7 @@ div {
 
 #carbon-selector {
     justify-content: center;
+    transition: all .2s ease-in-out;
 }
 
 .icon-links img {
@@ -431,12 +432,17 @@ div {
 
 #carbon-selector.icon-links img {
     max-width: 170px;
+    transition: all .2s ease-in-out;
 }
 
 #carbon-selector.icon-links figure {
     font-size: 1.4em;
+    transition: all .2s ease-in;
 }
 
+#carbon-selector figure:hover img {
+    transform: scale(1.2);
+}
 #catalog-list .container h1 {
     color: black;
 }
