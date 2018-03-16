@@ -3,10 +3,11 @@
 }
 
 .myMenu:hover li {
-    color: greenyellow;
+    color: #70b32f;
 }
 #main-section {
-    background: -webkit-linear-gradient(top, #0e1b41, #000000) no-repeat;
+    /*background: -webkit-linear-gradient(top, #0e1b41, #000000) no-repeat;*/
+    background: white;
     background-size: cover;
 }
 
@@ -38,7 +39,7 @@
 }
 
 [id^=ac-app-] h1 {
-    color: aqua;
+    color: black;
 }
 
 #ac-main {
@@ -64,7 +65,7 @@
 }
 
 .a122 {
-    color: white;
+    color: black;
     font-size: 2.0em;
     max-height: 200px;
     padding-top: 1em;
@@ -75,7 +76,7 @@
 
 @media only screen and (max-width: 768px) {
     .a122 {
-        color: white;
+        color: black;
         font-size: 1.9em;
         max-height: 250px;
         position: relative;
@@ -85,7 +86,7 @@
 }
 
 .centered {
-    color: greenyellow;
+    color: #70b32f;
     left: 50%;
     position: absolute;
     top: 50%;
@@ -97,11 +98,11 @@
 }
 
 .a122:hover .centered {
-    color: aqua;
+    color: black;
 }
 
 .intro-text {
-    color: white;
+    color: black;
     padding-top: 30px;
     text-align: justify;
     vertical-align: bottom;
@@ -129,22 +130,26 @@
 }
 
 #information.section {
-    background: black;
+    background: white;
 
 }
 
 #contact-us {
-    background: black;
+    background: white;
 }
 
 body {
-    color: white;
+    color: black;
     font-family: 'Aldrich', sans-serif;
     text-align: center;
 }
 
 div {
     display: block;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
 }
 
 .text-gradient-gold {
@@ -186,7 +191,7 @@ div {
 }
 
 .custom-section {
-    background: #000000;
+    background: white;
     font-family: 'Aldrich', sans-serif;
     height: 100%;
     width: 100%;
@@ -214,13 +219,14 @@ div {
 }
 
 #menu a {
-    color: #ffffff;
+    /*color: #ffffff;*/
+    color: black;
     padding: 0 .7em .7em;
     text-decoration: none;
 }
 
 #menu li:hover a {
-    color: greenyellow;
+    color: #70b32f;
 }
 #particles canvas {
     display: block;
@@ -284,7 +290,7 @@ div {
 
 #information {
     /*background: black;*/
-    background: url("../media/black.jpg");
+    background: white;
 }
 
 #sec-1-sl-1 .container {
@@ -368,7 +374,7 @@ div {
 }
 
 #light-up {
-    color: greenyellow;
+    color: #70b32f;
 }
 
 #info-sl-2-sec-2.information-sections {
@@ -395,7 +401,7 @@ div {
 }
 
 #ac-app.section {
-    background: black;
+    background: white;
 }
 
 #ac-app-sl-1.slide, #ac-app-sl-2.slide {
@@ -432,7 +438,7 @@ div {
 }
 
 #catalog-list .container h1 {
-    color: aqua;
+    color: black;
 }
 
 .icarb-catalog .container {
@@ -463,11 +469,11 @@ div {
 
 .left-content h1, .right-content h1 {
     text-align: left;
-    color: greenyellow;
+    color: #70b32f;
 }
 
 .left-content span, .right-content span {
-    color: white;
+    color: black;
     font-style: italic;
 }
 
@@ -479,7 +485,7 @@ div {
 }
 
 .left-content {
-    border-right: 3px dotted greenyellow;
+    border-right: 3px dotted #70b32f;
     padding-left: 0.5em;
     padding-right: 1em;
 }
@@ -972,7 +978,7 @@ div {
 }
 
 .bttn-stretch.bttn-default {
-    color: #fff
+    color: black;
 }
 
 .bttn-stretch.bttn-primary {
@@ -1122,8 +1128,6 @@ div {
 .bttn-fill {
     margin: 0;
     padding: 0;
-    border-width: 0;
-    border-color: transparent;
     background: transparent;
     font-weight: 400;
     cursor: pointer;
@@ -1132,9 +1136,9 @@ div {
     font-family: inherit;
     padding: 5px 12px;
     z-index: 0;
-    border: none;
+    border: 1px solid black;
     background: #fff;
-    color: #1d89ff;
+    color: #70b32f;
     -webkit-transition: all .3s cubic-bezier(.02, .01, .47, 1);
     transition: all .3s cubic-bezier(.02, .01, .47, 1)
 }
@@ -1145,7 +1149,7 @@ div {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #1d89ff;
+    background: #70b32f;
     content: '';
     opacity: 0;
     -webkit-transition: opacity .15s ease-out, -webkit-transform .15s ease-out;
