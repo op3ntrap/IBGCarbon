@@ -186,8 +186,9 @@ div {
 }
 
 .logo img {
-    height: 35em;
+    height: 20em;
     width: auto;
+    z-index: 9999;
 }
 
 .custom-section {
