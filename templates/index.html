@@ -9,8 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
     <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- AniCollection.css library -->
-    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <script>
         $(document).ready(function () {
             $('#fullpage').fullpage({
@@ -20,7 +19,7 @@
                 //anchors: ['firstPage', 'secondPage'],
                 navigation: true,
                 navigationPosition: 'right',
-                navigationTooltips: ['Home', 'About Us'],
+                navigationTooltips: ['Home', 'About Us', 'What do we do?', 'Solutions', 'Products', 'Contact Us'],
                 showActiveTooltip: false,
                 slidesNavigation: true,
                 slidesNavPosition: 'bottom center',
@@ -35,7 +34,7 @@
                 scrollBar: false,
                 easing: 'easeInOutCubic',
                 easingcss3: 'ease',
-                loopBottom: false,
+                loopBottom: true,
                 loopTop: false,
                 loopHorizontal: true,
                 continuousVertical: false,
@@ -99,17 +98,21 @@
     <script type="application/javascript" src="./js/particles.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+<!-- AniCollection.css library -->
+<!--<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">-->
 <body>
 <!--Top Fixed Menu-->
 <ul id="menu">
-    <li data-menuanchor="firstPage"><a href="#firstPage">First section</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-    <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
-    <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+    <li data-menuanchor="firstPage"><a href="#main-section-anchor">Home</a></li>
+    <li data-menuanchor="secondPage"><a href="#about-us-anchor">About Us</a></li>
+    <li data-menuanchor="thirdPage"><a href="#activated-carbon">What do We do?</a></li>
+    <li data-menuanchor="fourthPage"><a href="#choose-your-carbon">Solutions</a></li>
+    <li data-menuanchor="fourthPage"><a href="#our-products">Products</a></li>
+    <li data-menuanchor="fourthPage"><a href="#contact-us-anchor">Contact Us</a></li>
 </ul>
 <div id="fullpage">
     <!--Section 1 {Main Section}-->
-    <div class="section" id="main-section">
+    <div class="section" id="main-section" data-anchor="main-section-anchor">
         <div class="head-space"></div>
         <div id="particles"></div>
         <div class="container">
@@ -123,10 +126,10 @@
         </div>
     </div>
     <!--Section 2-->
-    <div class="section custom-section" id="about-us">
+    <div class="section custom-section" data-anchor="about-us-anchor" id="about-us">
         <div class="head-space"></div>
         <!-- Section 2 Slide 1 -->
-        <div class="slide" id="sec-1-sl-1">
+        <div class="slide" data-anchor="about-us" id="sec-1-sl-1">
             <div class="container">
                 <div class="about-us-sections">
                     <p class="section-heading"><strong>ABOUT US</strong></p>
@@ -154,7 +157,7 @@
         </div>
     </div>
     <!--Section 3-->
-    <div class="section custom-section" id="information">
+    <div class="section custom-section" data-anchor="activated-carbon" id="information">
         <div class="head-space"></div>
         <!--Slide 1-->
         <div class="slide">
@@ -262,7 +265,7 @@
         </div>
     </div>
     <!--Section 4-->
-    <div class="section" id="ac-app">
+    <div class="section" data-anchor="choose-your-carbon" id="ac-app">
         <!--<div class="head-space"></div>-->
         <!--slide 1-->
         <div class="slide" id="ac-app-sl-1">
@@ -1388,7 +1391,7 @@
             </div>
         </div>
     </div>
-    <div class="section custom-section" id="products">
+    <div class="section custom-section" data-anchor="our-products" id="products">
         <div class="slide" id="catalog-list">
             <div class="container">
                 <h1>Our Products</h1>
@@ -1494,7 +1497,7 @@
         </div>
         <!--Individual Products Start-->
         <div class="slide" id="icarb-2005">
-            <div class="container">
+            <div class="container" style="background: rgba(221,255,172,0.33)">
                 <div id="left-content">
                     <img src="./media/gac.jpeg" alt="ICARB-2005">
                     <h1>ICARB-2005</h1>
@@ -1512,26 +1515,30 @@
                     </ul>
                 </div>
                 <div id="right-content">
-
+                    <p style="font-size: 1.5em">
+                        ICARB 2005 Granular Activated Carbon is ideal for most Air purification purposes. Made from
+                        selected Grades of coconut shell, its superior level of hardness and unique micro pores, offers
+                        excellent adsorption of toxic and micro particulates in air.
+                    </p>
                 </div>
             </div>
 
-            </div>
-        </div>
-        <div class="slide" id="icarb-3001">
-            <div class="container">
-
-            </div>
-        </div>
-        <div class="slide" id="icarb-G-916">
-            <div class="container">
-
-            </div>
         </div>
     </div>
-    <div class="section custom-section" id="contact-us">
+    <div class="slide" id="icarb-3001">
+        <div class="container">
+
+        </div>
+    </div>
+    <div class="slide" id="icarb-G-916">
+        <div class="container">
+
+        </div>
+    </div>
+    <div class="section custom-section" data-anchor="contact-us-anchor" id="contact-us">
         <div class="head-space"></div>
         <div class="container">
+            Hello this is tru
         </div>
     </div>
 </div>
@@ -1549,3 +1556,4 @@
 <!--#TODO insert object wrappers for all svg content-->
 <!--#TODO configure optimum auto density param for the particles.js scripts-->
 <!--#TODO configure font size for mobile devices-->
+<!--TODO configure normalize.css fort the website-->

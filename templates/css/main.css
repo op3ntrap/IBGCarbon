@@ -2,6 +2,9 @@
     height: 1px;
 }
 
+.myMenu:hover li {
+    color: greenyellow;
+}
 #main-section {
     background: -webkit-linear-gradient(top, #0e1b41, #000000) no-repeat;
     background-size: cover;
@@ -127,6 +130,11 @@
 
 #information.section {
     background: black;
+
+}
+
+#contact-us {
+    background: black;
 }
 
 body {
@@ -169,6 +177,7 @@ div {
     margin: auto;
     padding-top: 0;
     width: 75%;
+    height: 75%;
 }
 
 .logo img {
@@ -210,6 +219,9 @@ div {
     text-decoration: none;
 }
 
+#menu li:hover a {
+    color: greenyellow;
+}
 #particles canvas {
     display: block;
     opacity: 1;
@@ -267,7 +279,8 @@ div {
 }
 
 #information {
-    background: black;
+    /*background: black;*/
+    background: url("../media/black.jpg");
 }
 
 #sec-1-sl-1 .container {
@@ -279,7 +292,7 @@ div {
     font-size: 1.3em;
     height: 50%;
     text-align: left;
-    vertical-align: top;
+    vertical-align: middle;
     width: 100%;
     margin-inside: 5px;
 }
@@ -420,7 +433,7 @@ div {
 
 #icarb-2005 .container {
     width: 85%;
-    height: 75%;
+    height: 80%;
     margin: 0 auto;
     border: none;
 }
@@ -455,7 +468,7 @@ div {
 }
 
 #left-content img {
-    padding-top: 0.5em;
+    padding-top: 10px;
     height: auto;
     max-width: 87%;
     margin: auto;
@@ -463,7 +476,7 @@ div {
 
 #left-content {
     border-right: 3px dotted greenyellow;
-    padding-left: 1em;
+    padding-left: 0.5em;
     padding-right: 1em;
 }
 
