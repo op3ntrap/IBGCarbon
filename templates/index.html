@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>IBG Carbon</title>
-    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
-    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.js"></script>
+    <!--<script type="text/javascript" src="./js/jquery.fullPage.js"></script>-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <script>
         $(document).ready(function () {
             $('#fullpage').fullpage({
@@ -18,7 +22,7 @@
                 //anchors: ['firstPage', 'secondPage'],
                 navigation: true,
                 navigationPosition: 'right',
-                navigationTooltips: ['Home', 'About Us'],
+                navigationTooltips: ['Home', 'About Us', 'What do we do?', 'Solutions', 'Products', 'Contact Us'],
                 showActiveTooltip: false,
                 slidesNavigation: true,
                 slidesNavPosition: 'bottom center',
@@ -33,12 +37,12 @@
                 scrollBar: false,
                 easing: 'easeInOutCubic',
                 easingcss3: 'ease',
-                loopBottom: false,
+                loopBottom: true,
                 loopTop: false,
                 loopHorizontal: true,
                 continuousVertical: false,
                 continuousHorizontal: false,
-                scrollHorizontally: true,
+                scrollHorizontally: false,
                 interlockedSlides: false,
                 dragAndMove: false,
                 offsetSections: false,
@@ -94,87 +98,1616 @@
             });
         });
     </script>
-    <script type="application/javascript" src="./js/particles.min.js"></script>
-
+    <script type="application/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
-
 </head>
+<!-- AniCollection.css library -->
+<!--<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">-->
 <body>
-
+<!--Top Fixed Menu-->
 <ul id="menu">
-    <li data-menuanchor="firstPage"><a href="#firstPage">First section</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-    <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
-    <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
+    <li data-menuanchor="firstPage"><a href="#main-section-anchor">Home</a></li>
+    <li data-menuanchor="secondPage"><a href="#about-us-anchor">About Us</a></li>
+    <li data-menuanchor="thirdPage"><a href="#activated-carbon">What do We do?</a></li>
+    <li data-menuanchor="fourthPage"><a href="#choose-your-carbon">Solutions</a></li>
+    <li data-menuanchor="fourthPage"><a href="#our-products">Products</a></li>
+    <li data-menuanchor="fourthPage"><a href="#contact-us-anchor">Contact Us</a></li>
 </ul>
 <div id="fullpage">
-    <div class="section" id="main-section">
+    <!--Section 1 {Main Section}-->
+    <div class="section" id="main-section" data-anchor="main-section-anchor">
         <div class="head-space"></div>
         <div id="particles"></div>
         <div class="container">
             <div class="logo center">
-                <img src="./media/logo.svg" alt="LOGO">
+                <img style="height: 20em" src="./media/logo1.jpg" alt="LOGO">
+            </div>
+            <div style="text-align: center;padding-left: 30px">
+                <h1 style="font-size: 4em;margin: 0;"><span class="text-gradient-gold">IBG CARBON</span></h1>
+                <h4 style="font-size: 1.8em;margin:0;"><i>Activating Your Future</i></h4>
             </div>
 
+            <div class="logo center">
+                <img src="./media/carbon-hump.webp" alt="">
+            </div>
         </div>
     </div>
-    <div class="section custom-section" id="section1">
+    <!--Section 2-->
+    <div class="section custom-section" data-anchor="about-us-anchor" id="about-us">
         <div class="head-space"></div>
-        <div class="slide">
+        <!-- Section 2 Slide 1 -->
+        <div class="slide" data-anchor="about-us" id="sec-1-sl-1">
             <div class="container">
+                <div class="about-us-sections">
+                    <p class="section-heading"><strong>ABOUT US</strong></p>
+                    <div class="section-content">
+                        <p> It all began with a group of people who dreamt of starting
+                            something completely new. We had a great vision, a passion for
+                            change and all the right skills. Together, we established IBG
+                            Carbon Pvt. Limited, a company dedicated to finding
+                            cutting-edge solutions and providing great services. To learn
+                            more, browse through our site or contact us directly. </p>
+                    </div>
+                </div>
+                <div class="about-us-sections">
+                    <p class="section-heading"><strong>OUR VISION</strong></p>
+                    <div class="section-content">
+                        <p> It all began with a group of people who dreamt of starting
+                            something completely new. We had a great vision, a passion for
+                            change and all the right skills. Together, we established IBG
+                            Carbon Pvt. Limited, a company dedicated to finding
+                            cutting-edge solutions and providing great services. To learn
+                            more, browse through our site or contact us directly. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Section 3-->
+    <div class="section custom-section" data-anchor="activated-carbon" id="information">
+        <div class="head-space"></div>
+        <!--Slide 1-->
+        <div class="slide">
+            <div class="container" style="top:0;">
                 <div class="intro-text">
-                    <h2>WHAT IS ACTIVATED CARBON?</h2>
-                    <p>As a leader in the industry, IBG Carbon Pvt. Limited has set the bar with its unwavering
-                        commitment
-                        to quality, performance and exceptional customer care. Through our extensive selection of
-                        services,
-                        we go above and beyond to ensure your needs are not just met, but exceeded.</p>
+                    <h2>GET TO KNOW MORE ABOUT <br>
+                        <br>
+                        <strong style="color: greenyellow; font-size: 1.9em;">ACTIVATED
+                            CARBON</strong></h2>
+                    <p><br>
+                        <br>
+                        <strong style="color: greenyellow;">Activated Carbon</strong> is
+                        charcoal that has been treated with oxygen to open up millions
+                        of tiny pores between the carbon atoms. According to
+                        Encyclopedia Britannica The use of special manufacturing
+                        techniques results in highly porous charcoals that have surface
+                        areas of 300-2,000 square metres per gram. These so-called
+                        active, or activated, charcoals are widely used to adsorb
+                        odorous or coloured substances from gases or liquids.</p>
+                    <p><strong>IBG Carbon Pvt. Limited</strong> is proud to offer high
+                        quality products at the best value, and with an impressive
+                        selection to choose from. Browse through our products below to
+                        get a better idea of what we offer, and get in touch with any
+                        questions. One of our product experts will be more than happy to
+                        assist with whatever you may need.</p>
                 </div>
                 <div class="icon-links">
-                    <figure>
-                        <img src="media/question.svg">
-                        <figcaption>ACTIVATED CARBON</figcaption>
+                    <figure><img src="media/question.svg">
+                        <figcaption>ACTIVATED CARBON
+                        </figcaption>
                     </figure>
-                    <figure>
-                        <img src="media/flow.svg">
+                    <figure><img src="media/flow.svg">
                         <figcaption>TYPES</figcaption>
                     </figure>
-                    <figure>
-                        <img src="media/factory.svg">
+                    <figure><img src="media/factory.svg">
                         <figcaption>APPLICATIONS</figcaption>
                     </figure>
-
-
                 </div>
             </div>
         </div>
+        <!--Slide 2-->
         <div class="slide">
+            <div class="container" id="info-sl-2">
+                <div class="information-sections" id="info-sl-2-sec-1">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td width="105px"><img src="media/question.svg"></td>
+                            <td> <span style="color: greenyellow; font-size: 1.9em">ACTIVATED<br>
+                          </span><span style="font-size: 1.9em">CARBON</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="font-size: 1.3em;padding-top: 20px;">
+                        <span style="word-wrap:break-word">Activated Carbon is a highly porous, high surface-area
+                        adsorption supporting material with a largely amorphous
+                        structure. It is composed primarily of aromatic
+                        configurations of carbon atoms joined by random
+                        cross-linkages. Activated carbon differs from another
+                        form of carbon-graphite-in that activated carbon has
+                        sheets or groups of atoms that are stacked unevenly in a
+                        disorganized manner.</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="information-sections" id="info-sl-2-sec-2">
+                    <h3>HOW IT IS PRODUCED?</h3>
+                    <span>
+                        Activated carbon is carbon produced from any organic carbonaceous source materials such as
+                        nutshells, coconut husk, peat, wood, coir, lignite, coal, and petroleum pitch.<br><br>
+                        It can be produced by one of the following processes:</span><br><br>
+                    <table align="left">
+                        <tr>
+                            <td width="30%" align="left">
+                                <img src="media/steam.svg" alt="steam-activation">
+                            </td>
+                            <td width="40%">
+                                <div class="cell-fill"></div>
+                            </td>
+                            <td align="center" width="30%">
+                                <img src="media/chemical.svg" alt="steam-activation">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="30%" align="center">
+                                <h4>STEAM ACTIVATION</h4>
+                            </td>
+                            <td width="40%" align="center">
+                                <div class="</div>cell-fill"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </td>
+                            <td width="30%" align="center">
+                                <h4>CHEMICAL ACTIVATION</h4>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--Slide 3-->
+        <!--<div class="slide" id="carbon-forms">-->
+        <!--<div class="container">-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+    <!--Section 4-->
+    <div class="section" data-anchor="choose-your-carbon" id="ac-app">
+        <!--<div class="head-space"></div>-->
+        <!--slide 1-->
+        <div class="slide active" id="ac-app-sl-1">
             <div class="container">
-                <div class="intro-text">
-                    <p>As a leader in the industry, IBG Carbon Pvt. Limited has set the bar with its unwavering
-                        commitment
-                        to quality, performance and exceptional customer care. Through our extensive selection of
-                        services,
-                        we go above and beyond to ensure your needs are not just met, but exceeded.</p>
+                <!--Background Video-->
+                <video id="background" loop="" muted="" data-autoplay="1">
+                    <source src="media/background.webm" type="video/webm">
+                    <source src="media/background.mp4" type="video/mp4">
+                    Your browser doesn't support webm or mp4 codec
+                </video>
+                <div style="z-index: 999; display: block;text-align: center" id="ac-main">
+                    <div style="height:10%;bottom:0;">
+                        <h1 style="color: white;">NOW CHOOSE AN <span id="light-up"
+                                                                      style="font-size: larger">ACTIVATED</span> CARBON
+                            SUITING
+                            YOUR
+                            NEEDS</h1>
+                        <h3>Designed with you in mind.</h3>
+                    </div>
+                    <div style="height:20%;top:0;">
+                        <div class="icon-links" id="carbon-selector">
+                            <!--<figure>-->
+                            <!--<a href="#choose-your-carbon/1"><img src="media/industry.svg"></a>-->
+                            <!--<figcaption>-->
+                            <!--INDUSTRY-->
+                            <!--</figcaption>-->
+                            <!--</figure>-->
+                            <figure><a href="#choose-your-carbon/1"><img src="media/industrial-robot.svg"></a>
+                                <figcaption>APPLICATION</figcaption>
+                            </figure>
+                            <figure><a href="#choose-your-carbon/3"><img src="media/3d-printer.svg"></a>
+                                <figcaption>PRODUCTS</figcaption>
+                            </figure>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="ac-app-sl-2">
+            <div class="container">
+                <div>
+                    <h1>Types of Industry</h1>
+                </div>
+                <div class="icon-container">
+                    <div class="a122">
+                        <a href="#choose-your-carbon/3">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Water Industry</div>
+                    </div>
+                    <div class="a122">
+                        <a href="#choose-your-carbon/4">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Air Industry</div>
+                    </div>
+                    <div class="a122">
+                        <a href="#choose-your-carbon/5">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Automobiles Industry</div>
+                    </div>
+                    <div class="a122">
+                        <a href="#choose-your-carbon/6">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Bio-Tech</div>
+                    </div>
+                    <div class="a122">
+                        <a href="#choose-your-carbon/7">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Refineries</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#choose-your-carbon/8">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Mining</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#choose-your-carbon/9">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Food & Beverages</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="ac-app-sl-3">
+            <div class="container">
+                <h1>
+                    Raw Material Origin Based Products
+                </h1>
+                <!--<div class="icon-links">-->
+                <!--<img src="media/logo.svg" alt="Coconut">-->
+                <!--<img src="media/logo.svg" alt="Wood">-->
+                <!--<img src="media/logo.svg" alt="Speciality">-->
+                <!--</div>-->
+                <div class="icon-container">
+
+                    <div class="a122">
+                        <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                             xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                             xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                             preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                             height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                        </svg>
+                        <div class="centered">Coconut</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                             xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                             xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                             preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                             height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                        </svg>
+                        <div class="centered">Wood</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                             xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                             xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                             preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                             height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                        </svg>
+                        <div class="centered">Specialty</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="ac-app-water">
+            <div class="container">
+                <h1>
+                    Applications in Water-based Industry
+                </h1>
+                <div class="icon-container">
+                    <div class="a122">
+                        <a href="#our-products/2">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Effluent Treatment</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/2">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Drinking Water Treatment</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/2">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Domestic RO Treatment</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/2">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Industrial RO Treatment</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/2">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Bacterial Growth Treatment</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/2">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Carbon Block MFT</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="ac-app-air">
+            <div class="container">
+                <h1>
+                    Applications in Air-based Industry
+                </h1>
+                <div class="icon-container">
+
+                    <div class="a122">
+                        <a href="#our-products/1">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Odor Control</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/1">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Industrial Air Pollution</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/1">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">VOC Removal from Air</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/1">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Cigarette Filters</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/1">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Gas Storage</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/1">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Removal of Acid</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/1">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Removal of H&#8322;S</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="ac-app-auto">
+            <div class="container">
+                <h1>
+                    Applications in Automobile Industry
+                </h1>
+                <!--<div class="icon-links">-->
+                <!--<img src="media/logo.svg" alt="Cabin Air Filtration">-->
+                <!--<img src="media/logo.svg" alt="Evaporative Emission Control">-->
+                <!--<img src="media/logo.svg" alt="Emission Control">-->
+                <!--</div>-->
+                <div class="icon-container">
+                    <div class="a122">
+                        <a href="#our-products/1">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Cabin Air Filtration</div>
+                    </div>
+
+                    <div class="a122">
+                        <a href="#our-products/1">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Emission Control</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="ac-app-pharma">
+            <div class="container">
+                <h1>
+                    Applications in Pharmaceutical-based Industry
+                </h1>
+                <!--<div class="icon-links">-->
+                <!--<img src="media/logo.svg" alt="De-Colorization">-->
+                <!--<img src="media/logo.svg" alt="Deodorization">-->
+                <!--<img src="media/logo.svg" alt="Waste Water Purification">-->
+                <!--</div>-->
+                <div class="icon-container">
+
+                    <div class="a122">
+                        <a href="#our-products/1">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">De-Colorization</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/1">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Deodorization</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/1">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Waste Water Purification</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="ac-app-refinery">
+            <div class="container">
+                <h1>
+                    Applications in Refinery-based Industry
+                </h1>
+                <!--<div class="icon-links">-->
+                <!--<img src="media/logo.svg" alt="Petroleum Oil Refinery">-->
+                <!--<img src="media/logo.svg" alt="Edible Oil Refinery">-->
+                <!--<img src="media/logo.svg" alt="Sugar Refinery">-->
+                <!--<img src="media/logo.svg" alt="Metal Refineries">-->
+                <!--</div>-->
+                <div class="icon-container">
+                    <div class="a122">
+                        <a href="#our-products/3">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Petroleum Oil Refinery</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/3">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Edible Oil Refinery</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/3">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Sugar Refinery</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/3">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Metal Refinery</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="ac-app-mining">
+            <div class="container">
+                <h1>
+                    Applications in Mining-based Industry
+                </h1>
+                <div class="icon-container">
+
+
+                    <div class="a122">
+                        <a href="#our-products/3">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Gold Mining</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/3">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Uranium Extraction</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/3">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Metal Recovery</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide" id="ac-app-food">
+            <div class="container">
+                <h1>
+                    Applications in Food & Beverage-based Industry
+                </h1>
+                <div class="icon-container">
+                    <div class="a122">
+                        <a href="#our-products/3">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Color Removal</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/3">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Taste Removal</div>
+                    </div>
+
+
+                    <div class="a122">
+                        <a href="#our-products/3">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)" y2="186.65826"
+                                                x2="-0.53728497" y1="-0.53728497" x1="-0.53728497" id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:none"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z"
+                                      class="shape"></path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">Odor Removal
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section" style="background: #4BBFC3">
-        <div class="head-space"></div>
-        <div class="container">
-            <div class="logo center">
-                <img src="./media/logo.svg" alt="LOGO">
+    <div class="section custom-section" data-anchor="our-products" id="products">
+        <div class="slide active" id="catalog-list">
+            <div class="container" style="padding-top: 60px">
+                <h1>Our Products</h1>
+                <div class="icon-container">
+                    <div class="a122 icarb">
+                        <!--icarb-2015-->
+                        <a href="#our-products/1">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1" id="icarb-2005">
+                                <defs>
+                                    <linearGradient gradientUnits="userSpaceOnUse"
+                                                    gradientTransform="scale(0.93060486,1.0745699)"
+                                                    y2="186.65826" x2="-0.53728497" y1="-0.53728497" x1="-0.53728497"
+                                                    id="grad2">
+                                        <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1"
+                                              offset="0%"></stop>
+                                        <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                              offset="100%"></stop>
+                                    </linearGradient>
+                                    <pattern id="img1" patternUnits="userSpaceOnUse" width="100%" height="650">
+                                        <image xlink:href="./media/gac.jpeg" x="-70" y="-150"
+                                               width="290.4" height="500"></image>
+                                    </pattern>
+                                </defs>
+                                <g transform="translate(0.5,0.57735027)"
+                                   requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                    <path style="stroke:url(#grad2);fill:url(#img1)"
+                                          d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z" class="shape"
+                                          onmouseover="evt.target.setAttribute('opacity', '0.2');"
+                                          onmouseout="evt.target.setAttribute('opacity','1)');">
+                                    </path>
+                                </g>
+                            </svg>
+                        </a>
+                        <div class="centered">ICARB 2005</div>
+                    </div>
+                    <div class="a122 icarb">
+                        <!--icarb-2015-->
+                        <a href="#our-products/2">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1" id="icarb-3002">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)"
+                                                y2="186.65826" x2="-0.53728497" y1="-0.53728497" x1="-0.53728497"
+                                                id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                                <pattern id="img2" patternUnits="userSpaceOnUse" width="100%" height="650">
+                                    <image xlink:href="./media/icarb-3001.webp" x="-70" y="-150"
+                                           width="290.4" height="500"></image>
+                                </pattern>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:url(#img2)"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z" class="shape"
+                                      onmouseover="evt.target.setAttribute('opacity', '0.2');"
+                                      onmouseout="evt.target.setAttribute('opacity','1)');">
+                                </path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">ICARB 3001</div>
+                    </div>
+                    <div class="a122 icarb">
+                        <!--icarb-2015-->
+                        <a href="#our-products/3">
+                            <svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                 xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg"
+                                 preserveAspectRatio="xMidYMid meet" viewBox="0 0 174.20508 201.15469" width="100%"
+                                 height="100%" version="1.1">
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse"
+                                                gradientTransform="scale(0.93060486,1.0745699)"
+                                                y2="186.65826" x2="-0.53728497" y1="-0.53728497" x1="-0.53728497"
+                                                id="grad2">
+                                    <stop id="stop2" style="stop-color:rgb(14,27,65);stop-opacity:1" offset="0%"></stop>
+                                    <stop id="stop4" style="stop-color:rgb(0,251,255);stop-opacity:1"
+                                          offset="100%"></stop>
+                                </linearGradient>
+                                <pattern id="img3" patternUnits="userSpaceOnUse" width="100%" height="650">
+                                    <image xlink:href="./media/icarb-g-916.webp" x="-70" y="-150"
+                                           width="290.4" height="500"></image>
+                                </pattern>
+                            </defs>
+                            <g transform="translate(0.5,0.57735027)"
+                               requiredFeatures="http://www.w3.org/Graphics/SVG/feature/1.2/#TextFlow">
+                                <path style="stroke:url(#grad2);fill:url(#img3)"
+                                      d="m 86.60254,0 86.60254,50 V 150 L 86.60254,200 0,150 V 50 Z" class="shape"
+                                      onmouseover="evt.target.setAttribute('opacity', '0.2');"
+                                      onmouseout="evt.target.setAttribute('opacity','1)');">
+                                </path>
+                            </g>
+                            </svg>
+                        </a>
+                        <div class="centered">ICARB-G916</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Individual Products Start-->
+        <div class="slide icarb-catalog" id="icarb-2005">
+            <div class="container">
+                <div class="left-content">
+                    <img src="./media/gac.jpeg" alt="ICARB-2005">
+                    <h1>ICARB-2005</h1>
+                    <span>Coconut Shell Granular Activated Carbon</span>
+                    <p style="font-size: 1.4em">
+                        ICARB-2005 is available in 3 different grades.<br> Grades(US Mesh)
+                    </p>
+                    <ul style="list-style-type: none; text-align: left;padding-left: 0;">
+                        <li>
+                            <button class="bttn-fill bttn-md bttn-custom">4x8</button>
+                        </li>
+                        <li>
+                            <button class="bttn-fill bttn-md bttn-custom">4x10</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-content">
+                    <p style="font-size: 1.5em">
+                        ICARB 2005 Granular Activated Carbon is ideal for most Air purification purposes. Made from
+                        selected Grades of coconut shell, its superior level of hardness and unique micro pores, offers
+                        excellent adsorption of toxic and micro particulates in air.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="slide icarb-catalog" id="icarb-3001">
+            <div class="container">
+                <div class="left-content">
+                    <img src="./media/icarb-3001.webp" alt="ICARB-2005">
+                    <h1>ICARB-3001</h1>
+                    <span>Coconut Shell Granular Activated Carbon</span>
+                    <p style="font-size: 1.4em">
+                        ICARB-3001 is available in 3 different grades.<br> Grades(US Mesh)
+                    </p>
+                    <ul style="list-style-type: none; text-align: left;padding-left: 0;">
+                        <li>
+                            <button class="bttn-fill bttn-md bttn-custom">8x30</button>
+                        </li>
+                        <li>
+                            <button class="bttn-fill bttn-md bttn-custom">12x30</button>
+                        </li>
+                        <li>
+                            <button class="bttn-fill bttn-md bttn-custom">12x40</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-content">
+                    <p style="font-size: 1.5em">
+                        ICARB 3001 Granular Activated Carbon is ideal for most Liquid phase application. Produced by
+                        steam activation of selected Grades of coconut shell, ICarb 3001 is suitable for removing
+                        organic and other impurities from Industrial Effluent and other Chemical process application.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="slide icarb-catalog" id="icarb-G-916">
+            <div class="container">
+                <div class="left-content">
+                    <img src="./media/icarb-g-916.webp" alt="ICARB-g-916" style="height: 30%;width: 80%;">
+                    <h1>ICARB-G-916</h1>
+                    <span>Coconut Shell Granular Activated Carbon</span>
+                    <p style="font-size: 1.4em">
+                        ICARB-G-916 is available in 3 different grades.<br> Grades(US Mesh)
+                    </p>
+                    <ul style="list-style-type: none; text-align: left;padding-left: 0;">
+                        <li>
+                            <button class="bttn-fill bttn-md bttn-custom">6x12</button>
+                        </li>
+                        <li>
+                            <button class="bttn-fill bttn-md bttn-custom">6x16</button>
+                        </li>
+                        <li>
+                            <button class="bttn-fill bttn-md bttn-custom">8x16</button>
+                        </li>
+                        <li>
+                            <button class="bttn-fill bttn-md bttn-custom">12x40</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-content">
+                    <p style="font-size: 1.5em">
+                        ICARB G-916 Granular Activated Carbon is ideal for Gold recovery and other mining industries.
+                        Produced by steam activation of selected Grades of coconut shell, ICARB G-916 with its unique
+                        pores offers excellent adsorption, better recovery of Gold and other minerals.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+    <div class="section custom-section" data-anchor="contact-us-anchor" id="contact-us">
+        <div class="head-space"></div>
+        <div class="container" style="vertical-align: middle">
+            <div style="padding-top: 30px"></div>
+            <div id="address-field" style="float: left;height: 40%; width: 50%;">
+                <h1 align="left" style="color: #70b32f">Address</h1>
+                <h2 align="left"><br><span style="color: #2a2a2a;">Branch Office</span>:<br></h2>
+                <h3 align="left">
+                    Building No. 105A,<br>
+                    Palayamkottai Road ( West ),<br>
+                    Opposite to Government Polytechnic,<br>
+                    Thoothukudi, Tamilnadu,<br>
+                    India
+                </h3>
+                <div align="left">
+                    <a href="tel:+914612391166" style="text-decoration: none; color: aqua; font-size: 1.5em"
+                       class="phone number"><img src="./media/phone-pop.png" alt="phone" height="20">
+                        <button class="bttn-stretch bttn-md bttn-default">+914612391166</button>
+                    </a>
+                    <br>
+                    <a href="mailto:info@ibgcarbon.com" style="text-decoration: none; color: aqua; font-size: 1.5em"
+                       class="phone number"><img src="./media/mail-pop.png" alt="mail" height="20">
+                        <button class="bttn-stretch bttn-md bttn-default">info@ibgcarbon.com</button>
+                    </a>
+                    <br>
+                    <a href="mailto:sales@ibgcarbon.com" style="text-decoration: none; color: aqua; font-size: 1.5em"
+                       class="phone number"><img src="./media/mail-pop.png" alt="mail" height="20">
+                        <button class="bttn-stretch bttn-md bttn-default">sales@ibgcarbon.com</button>
+                    </a>
+                </div>
+            </div>
+            <div style="float: right;height: 50%; width: 50%;">
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3942.7961770879174!2d78.14270461465907!3d8.805210394878564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03ef977d98a6cb%3A0xe4a701b92dab5712!2s105%2C+Palayamkottai+Rd%2C+Shanmugapuram%2C+Thoothukudi%2C+Tamil+Nadu+628001!5e0!3m2!1sen!2sin!4v1521204072861"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
 
+        </div>
+
+    </div>
 </div>
 <script>
-    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
     particlesJS.load('particles', './json/particlesjs-config.json', function () {
         console.log('callback - particles.js config loaded');
     });
+    // particlesJS.load('particles-1', './json/particlesjs-config-about-us.json', function () {
+    //     console.log('callback - particles.js config loaded');
+    // });
+
 </script>
 </body>
 </html>
+<!--#TODO configure font size for mobile devices-->

@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>IBG Carbon</title>
-    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css"/>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
-    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.js"></script>
     <script>
         $(document).ready(function () {
             $('#fullpage').fullpage({
                 //Navigation
                 menu: '#menu',
                 lockAnchors: false,
-                //anchors: ['firstPage', 'secondPage'],
-                navigation: true,
+                anchors: ['firstPage', 'secondPage'],
+                navigation: false,
                 navigationPosition: 'right',
-                navigationTooltips: ['Home', 'About Us'],
+                navigationTooltips: ['firstSlide', 'secondSlide'],
                 showActiveTooltip: false,
-                slidesNavigation: true,
-                slidesNavPosition: 'bottom center',
-
+                slidesNavigation: false,
+                slidesNavPosition: 'bottom',
 
                 //Scrolling
                 css3: true,
@@ -38,7 +33,7 @@
                 loopHorizontal: true,
                 continuousVertical: false,
                 continuousHorizontal: false,
-                scrollHorizontally: true,
+                scrollHorizontally: false,
                 interlockedSlides: false,
                 dragAndMove: false,
                 offsetSections: false,
@@ -58,11 +53,11 @@
                 recordHistory: true,
 
                 //Design
-                controlArrows: false,
-                // sectionsColor: ['#0E1B41', '#00D8D8', '#00D8D8', '#00D8D8'],
+                controlArrows: true,
                 verticalCentered: true,
-                paddingTop: '0px',
-                paddingBottom: '0px',
+                // sectionsColor: ['#ccc', '#fff'],
+                paddingTop: '0',
+                paddingBottom: '0   ',
                 fixedElements: '#header, .footer',
                 responsiveWidth: 0,
                 responsiveHeight: 0,
@@ -94,87 +89,803 @@
             });
         });
     </script>
-    <script type="application/javascript" src="./js/particles.min.js"></script>
-
-    <link rel="stylesheet" href="./css/main.css">
-
 </head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        color: white;
+    }
+
+    .section {
+        background: grey;
+    }
+
+    .container {
+        height: 90%;
+        width: 75%;
+        margin: auto;
+        /*background: black;*/
+    }
+
+    .left-area, .right-area {
+        float: left;
+        height: 100%;
+        width: 49%;
+        color: inherit;
+        text-align: justify;
+        font-size: 1.4em;
+    }
+
+    .left-area {
+        border-right: 3px dotted red;
+    }
+
+    .right-area {
+        /*border-left:3px dotted red;*/
+    }
+
+    .left-content {
+        padding-right: 1em;
+    }
+
+    .left-content h1 {
+        text-align: justify;
+    }
+
+    .right-content {
+        padding-left: 1em;
+    }
+
+    .left-area img {
+        width: 80%;
+        height: 30%;
+        border: white;
+        margin: auto;
+        padding-top: 2em;
+    }
+
+    .bttn-default {
+        color: #fff;
+    }
+
+    .bttn-primary,
+    .bttn,
+    .bttn-lg,
+    .bttn-md,
+    .bttn-sm,
+    .bttn-xs {
+        color: #1d89ff;
+    }
+
+    .bttn-warning {
+        color: #feab3a;
+    }
+
+    .bttn-danger {
+        color: #ff5964;
+    }
+
+    .bttn-success {
+        color: #28b78d;
+    }
+
+    .bttn-royal {
+        color: #bd2df5;
+    }
+
+    .bttn,
+    .bttn-lg,
+    .bttn-md,
+    .bttn-sm,
+    .bttn-xs {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+        border-color: transparent;
+        background: transparent;
+        font-weight: 400;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .bttn-lg {
+        padding: 8px 15px;
+        font-size: 24px;
+        font-family: inherit;
+    }
+
+    .bttn-md {
+        font-size: 20px;
+        font-family: inherit;
+        padding: 5px 12px;
+    }
+
+    .bttn-sm {
+        padding: 4px 10px;
+        font-size: 16px;
+        font-family: inherit;
+    }
+
+    .bttn-xs {
+        padding: 3px 8px;
+        font-size: 12px;
+        font-family: inherit;
+    }
+
+    .bttn-material-flat {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+        border-color: transparent;
+        background: transparent;
+        font-weight: 400;
+        cursor: pointer;
+        position: relative;
+        font-size: 20px;
+        font-family: inherit;
+        padding: 5px 12px;
+        overflow: hidden;
+        border-width: 0;
+        border-radius: 2px;
+        background: #fff;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.18), 0 1px 5px 0 rgba(0, 0, 0, 0.15);
+        color: #1d89ff;
+        text-transform: uppercase;
+        -webkit-transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .bttn-material-flat:hover,
+    .bttn-material-flat:focus {
+        box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+        -webkit-transition: box-shadow 0.4s ease-out;
+        transition: box-shadow 0.4s ease-out;
+    }
+
+    .bttn-material-flat.bttn-xs {
+        padding: 3px 8px;
+        font-size: 12px;
+        font-family: inherit;
+    }
+
+    .bttn-material-flat.bttn-sm {
+        padding: 4px 10px;
+        font-size: 16px;
+        font-family: inherit;
+    }
+
+    .bttn-material-flat.bttn-md {
+        font-size: 20px;
+        font-family: inherit;
+        padding: 5px 12px;
+    }
+
+    .bttn-material-flat.bttn-lg {
+        padding: 8px 15px;
+        font-size: 24px;
+        font-family: inherit;
+    }
+
+    .bttn-material-flat.bttn-default {
+        background: #fff;
+        color: #1d89ff;
+    }
+
+    .bttn-material-flat.bttn-primary {
+        background: #1d89ff;
+        color: #fff;
+    }
+
+    .bttn-material-flat.bttn-warning {
+        background: #feab3a;
+        color: #fff;
+    }
+
+    .bttn-material-flat.bttn-danger {
+        background: #ff5964;
+        color: #fff;
+    }
+
+    .bttn-material-flat.bttn-success {
+        background: #28b78d;
+        color: #fff;
+    }
+
+    .bttn-material-flat.bttn-royal {
+        background: #bd2df5;
+        color: #fff;
+    }
+
+    .bttn-default {
+        color: #fff;
+    }
+
+    .bttn-primary,
+    .bttn,
+    .bttn-lg,
+    .bttn-md,
+    .bttn-sm,
+    .bttn-xs {
+        color: #1d89ff;
+    }
+
+    .bttn-warning {
+        color: #feab3a;
+    }
+
+    .bttn-danger {
+        color: #ff5964;
+    }
+
+    .bttn-success {
+        color: #28b78d;
+    }
+
+    .bttn-royal {
+        color: #bd2df5;
+    }
+
+    .bttn,
+    .bttn-lg,
+    .bttn-md,
+    .bttn-sm,
+    .bttn-xs {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+        border-color: transparent;
+        background: transparent;
+        font-weight: 400;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .bttn-lg {
+        padding: 8px 15px;
+        font-size: 24px;
+        font-family: inherit;
+    }
+
+    .bttn-md {
+        font-size: 20px;
+        font-family: inherit;
+        padding: 5px 12px;
+    }
+
+    .bttn-sm {
+        padding: 4px 10px;
+        font-size: 16px;
+        font-family: inherit;
+    }
+
+    .bttn-xs {
+        padding: 3px 8px;
+        font-size: 12px;
+        font-family: inherit;
+    }
+
+    .bttn-unite {
+        margin: 0;
+        padding: 0;
+        border-width: 0;
+        border-color: transparent;
+        background: transparent;
+        font-weight: 400;
+        cursor: pointer;
+        position: relative;
+        font-size: 20px;
+        font-family: inherit;
+        padding: 5px 12px;
+        z-index: 0;
+        overflow: hidden;
+        border: 1px solid #1d89ff;
+        border-radius: 100px;
+        background: #fff;
+        color: #1d89ff;
+        -webkit-transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), border-color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), border-color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    }
+
+    .bttn-unite:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        background: #AFFF2E;
+        content: '';
+        opacity: 0;
+        z-index: -1;
+        -webkit-transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+        -webkit-transform: translate3d(-110%, -10%, 0) skewX(-20deg);
+        transform: translate3d(-110%, -10%, 0) skewX(-20deg);
+    }
+
+    .bttn-unite:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        background: rgba(214, 227, 255, 0.7);
+        content: '';
+        opacity: 0;
+        z-index: -1;
+        -webkit-transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+        -webkit-transform: translate3d(110%, -10%, 0) skewX(-20deg);
+        transform: translate3d(110%, -10%, 0) skewX(-20deg);
+    }
+
+    .bttn-unite:hover,
+    .bttn-unite:focus {
+        box-shadow: 0 1px 8px rgba(58, 51, 53, 0.3);
+        color: #1d89ff;
+        -webkit-transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
+    }
+
+    .bttn-unite:hover:before,
+    .bttn-unite:focus:before {
+        opacity: 1;
+        -webkit-transition: opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+        -webkit-transform: translate3d(-50%, -10%, 0) skewX(-20deg);
+        transform: translate3d(-50%, -10%, 0) skewX(-20deg);
+    }
+
+    .bttn-unite:hover:after,
+    .bttn-unite:focus:after {
+        opacity: 1;
+        -webkit-transition: opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.25s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+        -webkit-transform: translate3d(50%, -10%, 0) skewX(-20deg);
+        transform: translate3d(50%, -10%, 0) skewX(-20deg);
+    }
+
+    .bttn-unite.bttn-xs {
+        padding: 3px 8px;
+        font-size: 12px;
+        font-family: inherit;
+    }
+
+    .bttn-unite.bttn-xs:hover,
+    .bttn-unite.bttn-xs:focus {
+        box-shadow: 0 1px 4px rgba(58, 51, 53, 0.3);
+    }
+
+    .bttn-unite.bttn-sm {
+        padding: 4px 10px;
+        font-size: 16px;
+        font-family: inherit;
+    }
+
+    .bttn-unite.bttn-sm:hover,
+    .bttn-unite.bttn-sm:focus {
+        box-shadow: 0 1px 6px rgba(58, 51, 53, 0.3);
+    }
+
+    .bttn-unite.bttn-md {
+        font-size: 20px;
+        font-family: inherit;
+        padding: 5px 12px;
+    }
+
+    .bttn-unite.bttn-md:hover,
+    .bttn-unite.bttn-md:focus {
+        box-shadow: 0 1px 8px rgba(58, 51, 53, 0.3);
+    }
+
+    .bttn-unite.bttn-lg {
+        padding: 8px 15px;
+        font-size: 24px;
+        font-family: inherit;
+    }
+
+    .bttn-unite.bttn-lg:hover,
+    .bttn-unite.bttn-lg:focus {
+        box-shadow: 0 1px 10px rgba(58, 51, 53, 0.3);
+    }
+
+    .bttn-unite.bttn-default {
+        border-color: #1d89ff;
+        color: #1d89ff;
+    }
+
+    .bttn-unite.bttn-default:hover,
+    .bttn-unite.bttn-default:focus {
+        background: #d6e3ff;
+        color: #1d89ff;
+    }
+
+    .bttn-unite.bttn-default:before {
+        background: #a7c3ff;
+    }
+
+    .bttn-unite.bttn-default:after {
+        background: #d6e3ff;
+    }
+
+    .bttn-unite.bttn-primary {
+        border-color: #1d89ff;
+        color: #1d89ff;
+    }
+
+    .bttn-unite.bttn-primary:hover,
+    .bttn-unite.bttn-primary:focus {
+        background: #1d89ff;
+        color: #fff;
+    }
+
+    .bttn-unite.bttn-primary:before {
+        background: #006de3;
+    }
+
+    .bttn-unite.bttn-primary:after {
+        background: #1d89ff;
+    }
+
+    .bttn-unite.bttn-warning {
+        border-color: #feab3a;
+        color: #feab3a;
+    }
+
+    .bttn-unite.bttn-warning:hover,
+    .bttn-unite.bttn-warning:focus {
+        background: #feab3a;
+        color: #fff;
+    }
+
+    .bttn-unite.bttn-warning:before {
+        background: #f89001;
+    }
+
+    .bttn-unite.bttn-warning:after {
+        background: #feab3a;
+    }
+
+    .bttn-unite.bttn-danger {
+        border-color: #ff5964;
+        color: #ff5964;
+    }
+
+    .bttn-unite.bttn-danger:hover,
+    .bttn-unite.bttn-danger:focus {
+        background: #ff5964;
+        color: #fff;
+    }
+
+    .bttn-unite.bttn-danger:before {
+        background: #ff1424;
+    }
+
+    .bttn-unite.bttn-danger:after {
+        background: #ff5964;
+    }
+
+    .bttn-unite.bttn-success {
+        border-color: #28b78d;
+        color: #28b78d;
+    }
+
+    .bttn-unite.bttn-success:hover,
+    .bttn-unite.bttn-success:focus {
+        background: #28b78d;
+        color: #fff;
+    }
+
+    .bttn-unite.bttn-success:before {
+        background: #209271;
+    }
+
+    .bttn-unite.bttn-success:after {
+        background: #28b78d;
+    }
+
+    .bttn-unite.bttn-royal {
+        border-color: #bd2df5;
+        color: #bd2df5;
+    }
+
+    .bttn-unite.bttn-royal:hover,
+    .bttn-unite.bttn-royal:focus {
+        background: #bd2df5;
+        color: #fff;
+    }
+
+    .bttn-unite.bttn-royal:before {
+        background: #a20bdd;
+    }
+
+    .bttn-unite.bttn-royal:after {
+        background: #bd2df5;
+    }
+
+    .bttn-default {
+        color: #fff;
+    }
+
+    .bttn-primary,
+    .bttn,
+    .bttn-lg,
+    .bttn-md,
+    .bttn-sm,
+    .bttn-xs {
+        color: #1d89ff;
+    }
+
+    .bttn-warning {
+        color: #feab3a;
+    }
+
+    .bttn-danger {
+        color: #ff5964;
+    }
+
+    .bttn-success {
+        color: #28b78d;
+    }
+
+    .bttn-royal {
+        color: #bd2df5;
+    }
+
+    .bttn,
+    .bttn-lg,
+    .bttn-md,
+    .bttn-sm,
+    .bttn-xs {
+        margin: 0;
+        /*padding: 0;*/
+        border-width: 0;
+        border-color: transparent;
+        background: transparent;
+        font-weight: 400;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .bttn-lg {
+        padding: 8px 15px;
+        font-size: 24px;
+        font-family: inherit;
+    }
+
+    .bttn-md {
+        font-size: 20px;
+        font-family: inherit;
+        padding: 5px 12px;
+    }
+
+    .bttn-sm {
+        padding: 4px 10px;
+        font-size: 16px;
+        font-family: inherit;
+    }
+
+    .bttn-xs {
+        padding: 3px 8px;
+        font-size: 12px;
+        font-family: inherit;
+    }
+
+    .bttn-bordered {
+        margin: 0;
+        /*padding: 0;*/
+        border-width: 0;
+        border-color: transparent;
+        background: transparent;
+        font-weight: 400;
+        cursor: pointer;
+        position: relative;
+        font-size: 20px;
+        font-family: inherit;
+        padding: 5px 12px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        border-radius: 4px;
+        background: transparent;
+        color: #fff;
+        -webkit-transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+        transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+    }
+
+    .bttn-bordered:hover,
+    .bttn-bordered:focus {
+        border-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .bttn-bordered.bttn-xs {
+        padding: 3px 8px;
+        font-size: 12px;
+        font-family: inherit;
+    }
+
+    .bttn-bordered.bttn-sm {
+        padding: 4px 10px;
+        font-size: 16px;
+        font-family: inherit;
+    }
+
+    .bttn-bordered.bttn-md {
+        font-size: 20px;
+        font-family: inherit;
+        padding: 5px 12px;
+    }
+
+    .bttn-bordered.bttn-lg {
+        padding: 8px 15px;
+        font-size: 24px;
+        font-family: inherit;
+    }
+
+    .bttn-bordered.bttn-default {
+        border-color: rgba(255, 255, 255, 0.4);
+        color: #fff;
+    }
+
+    .bttn-bordered.bttn-default:hover,
+    .bttn-bordered.bttn-default:focus {
+        border-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .bttn-bordered.bttn-primary {
+        border-color: rgba(29, 137, 255, 0.4);
+        color: #1d89ff;
+    }
+
+    .bttn-bordered.bttn-primary:hover,
+    .bttn-bordered.bttn-primary:focus {
+        border-color: rgba(29, 137, 255, 0.7);
+    }
+
+    .bttn-bordered.bttn-warning {
+        border-color: rgba(254, 171, 58, 0.4);
+        color: #feab3a;
+    }
+
+    .bttn-bordered.bttn-warning:hover,
+    .bttn-bordered.bttn-warning:focus {
+        border-color: rgba(254, 171, 58, 0.7);
+    }
+
+    .bttn-bordered.bttn-danger {
+        border-color: rgba(255, 89, 100, 0.4);
+        color: #ff5964;
+    }
+
+    .bttn-bordered.bttn-danger:hover,
+    .bttn-bordered.bttn-danger:focus {
+        border-color: rgba(255, 89, 100, 0.7);
+    }
+
+    .bttn-bordered.bttn-success {
+        border-color: rgba(40, 183, 141, 0.4);
+        color: #28b78d;
+    }
+
+    .bttn-bordered.bttn-success:hover,
+    .bttn-bordered.bttn-success:focus {
+        border-color: rgba(40, 183, 141, 0.7);
+    }
+
+    .bttn-bordered.bttn-royal {
+        border-color: rgba(189, 45, 245, 0.4);
+        color: #bd2df5;
+    }
+
+    .bttn-bordered.bttn-royal:hover,
+    .bttn-bordered.bttn-royal:focus {
+        border-color: rgba(189, 45, 245, 0.7);
+    }
+
+    .bttn-block {
+        display: block;
+        width: 100%
+    }
+
+    .bttn-no-outline, .bttn-no-outline:active, .bttn-no-outline:focus, .bttn-no-outline:hover {
+        outline: none
+    }
+
+    .bttn-custom {
+        border: 1px solid greenyellow;
+        background: white;
+        color: black;
+        padding-top: 5px;
+    }
+
+    .buttn-custom:before {
+        background-color: #AFFF2E;
+    }
+
+    .bttn-custom:after {
+        background: #AFFF2E;
+    }
+
+
+</style>
 <body>
-
-<ul id="menu">
-    <li data-menuanchor="firstPage"><a href="#firstPage">First section</a></li>
-    <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-    <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
-    <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
-</ul>
 <div id="fullpage">
-    <div class="section" id="main-section">
-        <div class="head-space"></div>
-        <div id="particles"></div>
+    <div class="section">
         <div class="container">
-            <div class="logo center">
-                <img src="./media/logo.svg" alt="LOGO">
-            </div>
+            <div class="left-area">
+                <div class="left-content">
+                    <img src="./media/gac.jpeg" alt="">
+                    <h1>ICARB-2005</h1>
+                    <p><i>Coconut Shell Granular Activated Carbon</i></p>
+                    <p>
+                        ICARB-2005 is available in different grades.
+                    </p>
+                    <!--<ul style="list-style-type: none">-->
+                    <!--<li>-->
+                    <!--<button class="bttn-unite bttn-md bttn-custom">Item 1</button>-->
+                    <!--</li>-->
+                    <!--<li>&nbsp;</li>-->
+                    <!--<li>-->
+                    <!--<button class="bttn-unite bttn-md bttn-custom">Item 2</button>-->
+                    <!--</li>-->
+                    <!--<li>&nbsp;</li>-->
+                    <!--<li>-->
+                    <!--<button class="bttn-unite bttn-md bttn-royal">Item 3</button>-->
+                    <!--</li>-->
+                    <!--</ul>-->
 
-        </div>
-    </div>
-    <div class="section custom-section" id="section1">
-        <div class="head-space"></div>
-        <div class="slide">
-            <div class="container">
-                <div class="intro-text">
-                    <h2>WHAT IS ACTIVATED CARBON?</h2>
-                    <p>As a leader in the industry, IBG Carbon Pvt. Limited has set the bar with its unwavering
-                        commitment
-                        to quality, performance and exceptional customer care. Through our extensive selection of
-                        services,
-                        we go above and beyond to ensure your needs are not just met, but exceeded.</p>
-                </div>
-                <div class="icon-links">
-                    <figure>
-                        <img src="media/question.svg">
-                        <figcaption>ACTIVATED CARBON</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="media/flow.svg">
-                        <figcaption>TYPES</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="media/factory.svg">
-                        <figcaption>APPLICATIONS</figcaption>
-                    </figure>
+                    <!--<ul style="list-style-type: none">-->
+                    <!--<li>-->
+                    <!--<button class="bttn-bordered bttn-md bttn-custom">jjdjj</button>-->
+                    <!--</li>-->
+                    <!--<li>&nbsp;</li>-->
+                    <!--<li>-->
+                    <!--<button class="bttn-unite bttn-md bttn-custom">Item 2</button>-->
+                    <!--</li>-->
+                    <!--<li>&nbsp;</li>-->
+                    <!--<li>-->
+                    <!--<button class="bttn-unite bttn-md bttn-royal">Item 3</button>-->
+                    <!--</li>-->
+                    <!--</ul>-->
+                    <!--<button class="bttn-un"></button>-->
+                    <button class="bttn-unite bttn-md bttn-custom bttn-block">kjfkj</button>
+                    <button class="bttn-unite bttn-md bttn-custom bttn-block">kjfkj</button>
+                    <button class="bttn-unite bttn-md bttn-custom bttn-block">kjfkj</button>
+                    <button class="bttn-unite bttn-md bttn-custom bttn-block">kjfkj</button>
+                    <button class="bttn-unite bttn-md bttn-custom bttn-block">kjfkj</button>
 
-
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div class="container">
-                <div class="intro-text">
-                    <p>As a leader in the industry, IBG Carbon Pvt. Limited has set the bar with its unwavering
-                        commitment
-                        to quality, performance and exceptional customer care. Through our extensive selection of
-                        services,
-                        we go above and beyond to ensure your needs are not just met, but exceeded.</p>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="section" style="background: #4BBFC3">
-        <div class="head-space"></div>
-        <div class="container">
-            <div class="logo center">
-                <img src="./media/logo.svg" alt="LOGO">
+            <div class="right-area">
+                <div class="right-content">
+                    <p>
+                        ICarb 2005 Granular Activated Carbon is ideal for most Air purification purposes. Made from
+                        selected Grades of coconut shell, its superior level of hardness and unique micro pores, offers
+                        excellent adsorption of toxic and micro particulates in air.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+    <div class="section">Some section
+        <div class="slide"> Slide 1</div>
+        <div class="slide"> Slide 2</div>
+        <div class="slide"> Slide 3</div>
+        <div class="slide"> Slide 4</div>
+    </div>
 
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
+    <div class="section">Some section</div>
 </div>
-<script>
-    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-    particlesJS.load('particles', './json/particlesjs-config.json', function () {
-        console.log('callback - particles.js config loaded');
-    });
-</script>
+
 </body>
 </html>
